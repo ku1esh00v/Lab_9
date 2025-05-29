@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <!-- Горизонтальный контейнер для кнопок -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <!-- Кнопка 3x3 -->
+        <Button
+            android:id="@+id/btn_3x3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="3x3"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"/>
+
+        <!-- Кнопка 4x4 -->
+        <Button
+            android:id="@+id/btn_4x4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="4x4"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"/>
+
+        <!-- Кнопка 5x5 -->
+        <Button
+            android:id="@+id/btn_5x5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="5x5"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- Игровая сетка -->
+    <GridView
+        android:id="@+id/game_grid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:numColumns="3"
+        android:verticalSpacing="2dp"
+        android:horizontalSpacing="2dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"/>
+</LinearLayout>
